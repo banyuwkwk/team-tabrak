@@ -39,7 +39,7 @@ export default function HeroSection() {
           rel="noopener noreferrer"
           className="mt-6 inline-block px-6 py-3 bg-white/20 hover:bg-white/30 border border-white/40 text-white rounded-full backdrop-blur-sm transition"
         >
-          Jelajahi Sekarang
+          Discord Team Tabrak
         </a>
       </div>
     </section>

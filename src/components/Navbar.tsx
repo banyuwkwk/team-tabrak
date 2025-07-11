@@ -39,7 +39,7 @@ export default function Navbar() {
         {/* KIRI: Logo */}
         <div className="relative w-10 h-10 sm:w-12 sm:h-12">
           <Image
-            src="/images/logo/logo.png"
+            src="/images/home/logo/logo.png"
             alt="Tabrak Logo"
             fill
             className="object-contain"
