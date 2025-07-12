@@ -53,6 +53,12 @@ const members = [
     category: "Member",
   },
   {
+    name: "Rizky",
+    role: "Member, Support",
+    image: "/images/member/rizky.png",
+    category: "Member",
+  },
+  {
     name: "Jevaro",
     role: "Member, Support",
     image: "/images/member/jevaro.png",
