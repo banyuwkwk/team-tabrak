@@ -28,7 +28,7 @@ export default function ContactPage() {
       {/* Card Discord & TikTok */}
       <div className="flex flex-col sm:flex-row gap-8 justify-center items-center">
         <a
-          href="https://discord.gg/link-discord-kamu"
+          href="https://discord.gg/dtv7ghgb"
           target="_blank"
           style={{ animationDelay: "400ms" }}
           className="group bg-white/5 hover:bg-yellow-400 border border-white/20 hover:border-yellow-400 transition rounded-xl p-6 w-[280px] text-center shadow-md hover:shadow-yellow-400/30 animate-fadeInZoom"
@@ -41,7 +41,7 @@ export default function ContactPage() {
         </a>
 
         <a
-          href="https://www.tiktok.com/@usernamekamu"
+          href="https://www.tiktok.com/@team.tabrak.racing"
           target="_blank"
           style={{ animationDelay: "600ms" }}
           className="group bg-white/5 hover:bg-yellow-400 border border-white/20 hover:border-yellow-400 transition rounded-xl p-6 w-[280px] text-center shadow-md hover:shadow-yellow-400/30 animate-fadeInZoom"

@@ -25,42 +25,48 @@ const members = [
   {
     name: "Eltraa",
     role: "Support, Coordinator, Joki",
-    image: "/images/home/profile/vano.png",
+    image: "/images/member/eltra.png",
     category: "Staff",
   },
   {
     name: "Azrill",
-    role: "Joki, Support",
-    image: "/images/home/profile/vano.png",
-    category: "Joki",
+    role: "Staff, Coordinator ,Joki",
+    image: "/images/member/azril.png",
+    category: "Staff",
   },
   {
-    name: "Rizky",
-    role: "Member, Support",
-    image: "/images/member/rizky.png",
+    name: "Corky",
+    role: "Insider, Member, Support",
+    image: "/images/member/corky.png",
     category: "Insider",
   },
   {
     name: "Qnell",
     role: "Member, Support",
     image: "/images/member/qnell.png",
-    category: "Insider",
+    category: "Member",
   },
   {
     name: "Vinzz",
     role: "Member, Support",
     image: "/images/member/vinz.png",
-    category: "Insider",
+    category: "Member",
   },
   {
     name: "Jevaro",
     role: "Member, Support",
     image: "/images/member/jevaro.png",
-    category: "Insider",
+    category: "Member",
+  },
+  {
+    name: "Jeje",
+    role: "Member, Support",
+    image: "/images/member/jeje.png",
+    category: "Member",
   },
 ];
 
-const categories = ["All", "Founder", "Staff", "Joki", "Insider"];
+const categories = ["All", "Founder", "Staff", "Insider", "Member"];
 
 export default function AboutPage() {
   const [selectedCategory, setSelectedCategory] = useState("All");
@@ -94,15 +100,17 @@ export default function AboutPage() {
       </div>
 
       {/* Member Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 max-w-6xl w-full">
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-5xl w-full justify-items-center">
         {filteredMembers.length > 0 ? (
           filteredMembers.map((member, i) => (
             <div
               key={i}
               style={{ animationDelay: `${i * 100}ms` }}
-              className="group relative aspect-[300/420] w-full overflow-hidden rounded-xl bg-[#1a1a1a] border border-white/20 shadow-md transition duration-300 hover:border-yellow-400 hover:shadow-[0_0_20px_4px_rgba(250,204,21,0.6)] animate-fadeInUp"
+              className="group relative aspect-[300/420] w-full max-w-[160px] sm:max-w-[180px] md:max-w-[260px] lg:max-w-[280px] overflow-hidden rounded-xl bg-[#1a1a1a] border border-white/20 shadow-md transition duration-300 hover:border-yellow-400 hover:shadow-[0_0_20px_4px_rgba(250,204,21,0.6)] animate-fadeInUp"
+
             >
               <div className="relative z-10 flex flex-col h-full">
+                {/* Foto */}
                 <div className="relative w-full aspect-square">
                   <Image
                     src={member.image}
@@ -112,12 +120,15 @@ export default function AboutPage() {
                   />
                 </div>
 
-                <div className="flex flex-1 items-center justify-center p-4 text-center">
+                {/* Info */}
+                <div className="flex flex-1 items-center justify-center p-2 text-center">
                   <div>
-                    <h3 className="text-white text-base font-semibold mb-1 group-hover:text-yellow-300 transition">
+                    <h3 className="text-white text-[10px] sm:text-sm md:text-base font-semibold mb-1 group-hover:text-yellow-300 transition">
                       {member.name}
                     </h3>
-                    <p className="text-white/60 text-sm">{member.role}</p>
+                    <p className="text-white/60 text-[8px] sm:text-xs md:text-sm leading-tight">
+                      {member.role}
+                    </p>
                   </div>
                 </div>
               </div>

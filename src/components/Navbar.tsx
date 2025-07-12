@@ -11,7 +11,7 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsSticky(window.scrollY > 800); // Aktif saat scroll lebih dari 50px
+      setIsSticky(window.scrollY > 800);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -28,16 +28,20 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`w-full z-50 mt-6 flex justify-center transition-all duration-2000 ${
-        isSticky ? "fixed top-0 " : "absolute top-0 mt-6"
+      className={`w-full z-50 flex justify-center transition-all duration-700 ${
+        isSticky ? "fixed top-0" : "absolute top-0 mt-6"
       }`}
     >
       <div
-        className="border border-white/20 rounded-full px-8 sm:px-14 py-3 flex items-center justify-between gap-6 w-full max-w-5xl
-        shadow-[0_0_20px_5px_rgba(255,255,255,0.2)] transition duration-900 bg-white/30 backdrop-blur-md"
+        className="border border-white/20 rounded-full 
+          px-4 py-2 sm:px-8 sm:py-3 
+          flex items-center justify-between gap-4 sm:gap-6 w-full max-w-5xl
+          shadow-[0_0_20px_5px_rgba(255,255,255,0.2)] 
+          transition duration-700 
+          bg-white/30 backdrop-blur-md"
       >
-        {/* KIRI: Logo */}
-        <div className="relative w-10 h-10 sm:w-12 sm:h-12">
+        {/* Logo */}
+        <div className="relative w-8 h-8 sm:w-10 sm:h-10">
           <Image
             src="/images/home/logo/logo.png"
             alt="Tabrak Logo"
@@ -46,8 +50,8 @@ export default function Navbar() {
           />
         </div>
 
-        {/* MENU */}
-        <ul className="flex items-center gap-4 sm:gap-8 text-sm sm:text-base">
+        {/* Menu */}
+        <ul className="flex items-center gap-3 sm:gap-6 text-xs sm:text-base">
           {navItems.map((item) => (
             <li key={item.name}>
               <Link
@@ -69,7 +73,7 @@ export default function Navbar() {
           href="https://discord.gg/dtv7ghgb"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-gray-300 hover:text-white hover:drop-shadow-[0_0_6px_white] transition font-medium text-sm"
+          className="text-gray-300 hover:text-white hover:drop-shadow-[0_0_6px_white] transition font-medium text-xs sm:text-sm"
         >
           Discord
         </a>

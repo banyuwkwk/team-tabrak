@@ -15,7 +15,7 @@ export default function AboutPage() {
         {/* Sejarah Singkat */}
         <div>
           <h2 className="text-xl font-semibold text-yellow-400 mb-2 animate-fadeInZoom" style={{ animationDelay: "100ms" }}>
-            Siapa Kami?
+            Sejarah Kami?
           </h2>
           <p className="text-white/80 animate-typing" style={{ animationDelay: "200ms" }}>
             Team Tabrak adalah Team yang berdiri dari ide gabut kami bertiga (Banyu ,Grah ,Ade).
@@ -42,7 +42,7 @@ export default function AboutPage() {
             <ul className="list-disc list-inside text-white/80 space-y-1">
               {[
                 "Mengadakan event yang seru dan edukatif",
-                "Menjadi wadah untuk kreativitas rider muda",
+                "Menjadi wadah untuk kreativitas",
                 "Membuat konten media yang positif & inspiratif",
                 "Menjalin kebersamaan antar anggota & komunitas lain",
               ].map((text, idx) => (
